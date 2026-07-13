@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatExe | Chronicles</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-base text-primary">
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar scrolled" id="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="brand font-serif italic">BeatExe.</a>
+            <div class="nav-links desktop-only">
+                <a href="explore.html">Atlas</a>
+                <a href="chronicles.html">Chronicles</a>
+                <a href="ledger.html">Ledger</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-icon"><i data-lucide="search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="bg-base" style="padding-top: 8rem;">
+        
+        <!-- SECTION 1: THE HERO -->
+        <header class="container mx-auto px-4" style="padding-bottom: 6rem; border-bottom: 1px solid rgba(255,255,255,0.05);">
+            <h1 class="font-serif text-primary" style="font-size: clamp(3rem, 8vw, 6rem); line-height: 1; letter-spacing: -0.02em; margin-bottom: 2rem;">
+                The Chronicles.
+            </h1>
+            <p style="color: var(--text-secondary); font-size: clamp(1rem, 2vw, 1.25rem); max-width: 600px; line-height: 1.6;">
+                Deep dives, visual pipelines, and long-form journal entries. Documenting the lineage of sound across borders and eras.
+            </p>
+        </header>
+
+        <!-- SECTION 2: FEATURED PIPELINE -->
+        <section class="container mx-auto px-4" style="padding: 6rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+            <h2 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-secondary); margin-bottom: 3rem;">Featured Issue</h2>
+            
+            <a href="story.html" class="group" style="display: block; text-decoration: none;">
+                <div style="display: flex; flex-wrap: wrap; gap: 0; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; overflow: hidden; background: rgba(255,255,255,0.02); transition: border-color 0.3s;" onmouseover="this.style.borderColor='var(--text-primary)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+                    
+                    <!-- The Visual (High-contrast B&W photo to match your aesthetic) -->
+                    <div style="flex: 1.5; min-width: 300px; position: relative; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80" alt="Hip Hop Lineage" style="width: 100%; height: 100%; min-height: 400px; object-fit: cover; filter: grayscale(100%) contrast(1.3); transition: transform 0.7s ease;" class="group-hover:scale-105">
+                    </div>
+                    
+                    <!-- The Editorial Context -->
+                    <div style="flex: 1; min-width: 300px; padding: 4rem; display: flex; flex-direction: column; justify-content: center;">
+                        <span style="font-size: 0.65rem; font-family: monospace; color: var(--text-secondary); margin-bottom: 1.5rem; display: block;">PIPELINE // 01</span>
+                        <h3 class="font-serif text-primary" style="font-size: 2.5rem; line-height: 1.1; margin-bottom: 1.5rem;">The Architecture of the Pen.</h3>
+                        <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.6; margin-bottom: 3rem;">
+                            Tracing the evolution of raw, uninterrupted storytelling. How the blueprint laid down by 90s New York Boom-Bap paved the exact path for the elite lyricism exploding out of New Delhi today. 
+                        </p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem;">
+                            <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-primary); border: 1px solid rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 50px;">Nas</span>
+                            <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-primary); border: 1px solid rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 50px;">Seedhe Maut</span>
+                        </div>
+                        <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-primary); border-bottom: 1px solid var(--text-primary); align-self: flex-start; padding-bottom: 4px;">Read Pipeline &rarr;</span>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- SECTION 3: THE ARCHIVE INDEX -->
+        <section class="container mx-auto px-4" style="padding: 6rem 0;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem;">
+                <h2 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-secondary);">Archive Index</h2>
+                <span style="font-size: 0.75rem; font-family: monospace; color: var(--text-secondary);">03 Entries</span>
+            </div>
+
+            <!-- List of previous articles -->
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column;">
+                
+                <!-- Entry 1 -->
+                <li style="border-top: 1px solid rgba(255,255,255,0.1);">
+                    <a href="#" style="display: flex; flex-wrap: wrap; gap: 2rem; padding: 2.5rem 0; text-decoration: none; align-items: center; transition: background 0.3s;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.02)'" onmouseout="this.style.backgroundColor='transparent'">
+                        <div style="width: 150px; font-family: monospace; font-size: 0.8rem; color: var(--text-secondary);">
+                            12 July 2026
+                        </div>
+                        <div style="flex: 1; min-width: 250px;">
+                            <h3 class="font-serif text-primary" style="font-size: 1.75rem; margin-bottom: 0.5rem;">The Live Channeling.</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; max-width: 500px;">
+                                Understanding why a Qawwali performance isn't just music, but a dictated rhythm controlled entirely by the audience.
+                            </p>
+                        </div>
+                        <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-secondary);">
+                            Qawwali / Nusrat
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Entry 2 -->
+                <li style="border-top: 1px solid rgba(255,255,255,0.1);">
+                    <a href="#" style="display: flex; flex-wrap: wrap; gap: 2rem; padding: 2.5rem 0; text-decoration: none; align-items: center; transition: background 0.3s;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.02)'" onmouseout="this.style.backgroundColor='transparent'">
+                        <div style="width: 150px; font-family: monospace; font-size: 0.8rem; color: var(--text-secondary);">
+                            04 June 2026
+                        </div>
+                        <div style="flex: 1; min-width: 250px;">
+                            <h3 class="font-serif text-primary" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Floating in the Architecture.</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; max-width: 500px;">
+                                Why progressive rock requires patience, and how I learned to stop listening to lyrics and start sitting inside the sound.
+                            </p>
+                        </div>
+                        <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-secondary);">
+                            Prog Rock / Floyd
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Entry 3 -->
+                <li style="border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1);">
+                    <a href="#" style="display: flex; flex-wrap: wrap; gap: 2rem; padding: 2.5rem 0; text-decoration: none; align-items: center; transition: background 0.3s;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.02)'" onmouseout="this.style.backgroundColor='transparent'">
+                        <div style="width: 150px; font-family: monospace; font-size: 0.8rem; color: var(--text-secondary);">
+                            18 May 2026
+                        </div>
+                        <div style="flex: 1; min-width: 250px;">
+                            <h3 class="font-serif text-primary" style="font-size: 1.75rem; margin-bottom: 0.5rem;">The Magnetic Translation.</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; max-width: 500px;">
+                                How the raw acoustic isolation of the 90s perfectly translated into the digital anxiety of the modern era.
+                            </p>
+                        </div>
+                        <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-secondary);">
+                            Alt Rock / Radiohead
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+
+    </main>
+
+
+    <!-- Ultra-Minimal Premium Footer -->
+    <footer class="bg-base" style="margin-top: 8rem; padding-top: 4rem; padding-bottom: 2rem; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container max-w-content mx-auto">
+            
+            <!-- Top Section: Brand & Connect -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 3rem; margin-bottom: 4rem;">
+                
+                <!-- Brand Logo -->
+                <div>
+                    <a href="index.html" class="brand font-serif italic text-primary" style="font-size: 3.5rem; text-decoration: none; display: block; line-height: 1;">
+                        BeatExe.
+                    </a>
+                </div>
+
+                <!-- Connect Links (Horizontal) -->
+                <div>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 2.5rem;">
+                        <li><a href="https://github.com/VivekShringeri/Portfolio" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/vivek-shringeri-b263553a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/controsparalos?igsh=cjJzdnk5cGlibHFo" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">Instagram</a></li>
+                        <li><a href="https://pin.it/3P8KYF6SW" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">Pinterest</a></li>
+                        <li><a href="vivekshringeri001@gmail.com" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">Email</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">
+                <div>
+                    Designed & Developed by VS&CO ASSN.
+                </div>
+                <div>
+                
+                    <span>&copy; 2026 BeatExe. All rights reserved.</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script type="module" src="js/chronicles-view.js"></script>
+        <script type="module" src="js/chronicles.js"></script>
+
+    <script type="module" src="js/search.js"></script>
+</body>
+</html>

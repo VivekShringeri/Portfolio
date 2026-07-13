@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatExe | Archive Record</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-base text-primary">
+
+    <nav class="navbar scrolled" id="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="brand font-serif italic">BeatExe.</a>
+            <div class="nav-links desktop-only">
+                <a href="explore.html">Atlas</a>
+                <a href="chronicles.html">Chronicles</a>
+                <a href="ledger.html">Ledger</a>
+            </div>
+            <div class="nav-actions">
+            <button class="btn-icon" aria-label="Search"><i data-lucide="search"></i></button>
+            <div class="avatar-sm outline-avatar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section-padding mt-8">
+        <div class="container max-w-content mx-auto">
+            
+            <header class="mb-8">
+                <span id="view-type" class="text-sm text-secondary uppercase-spaced block mb-2 skeleton-text w-50"></span>
+                <h1 id="view-title" class="display-title font-serif mb-4 skeleton-text w-75">Loading Record...</h1>
+                
+                <div id="view-badges" class="flex-gap wrap mb-6">
+                    <div class="badge skeleton-text w-50"></div>
+                </div>
+            </header>
+
+            <article class="text-lg text-secondary mb-12">
+                <p id="view-description" class="skeleton-text w-100" style="height: 100px;"></p>
+            </article>
+
+            <!-- Journal Entry Section -->
+            <section class="border-t pt-8 mb-12">
+                <h2 class="h3 uppercase-spaced mb-4">Add to Ledger</h2>
+                <div class="bg-surface p-6 border-all bento-box">
+                <textarea id="ledger-input" class="input-field mb-4" rows="3" placeholder="Log your thoughts, production notes, or sample discoveries here..." style="width: 100%; resize: vertical; background: transparent; border-bottom: 1px solid var(--border); border-radius: 0; padding-left: 0; color: var(--text-primary); font-family: inherit; outline: none;"></textarea>    
+                    <div class="flex-between">
+                        <p id="save-status" class="text-sm text-secondary" style="opacity: 0; transition: opacity 0.3s ease;">Entry saved to Ledger.</p>
+                        <button id="save-note-btn" class="btn btn-outline">Save Entry</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="border-t pt-8">
+                <h2 id="related-title" class="h3 uppercase-spaced mb-6">Associated Records</h2>
+                <div id="related-grid" class="grid-12 bento-layout">
+                    </div>
+            </section>
+            
+        </div>
+    </main>
+
+
+    <!-- Ultra-Minimal Premium Footer -->
+    <footer class="bg-base" style="margin-top: 8rem; padding-top: 4rem; padding-bottom: 2rem; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container max-w-content mx-auto">
+            
+            <!-- Top Section: Brand & Connect -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 3rem; margin-bottom: 4rem;">
+                
+                <!-- Brand Logo -->
+                <div>
+                    <a href="index.html" class="brand font-serif italic text-primary" style="font-size: 3.5rem; text-decoration: none; display: block; line-height: 1;">
+                        BeatExe.
+                    </a>
+                </div>
+
+                <!-- Connect Links (Horizontal) -->
+                <div>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 2.5rem;">
+                        <li><a href="https://github.com/VivekShringeri/Portfolio" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/vivek-shringeri-b263553a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/controsparalos?igsh=cjJzdnk5cGlibHFo" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">Instagram</a></li>
+                        <li><a href="https://pin.it/3P8KYF6SW" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">Pinterest</a></li>
+                        <li><a href="vivekshringeri001@gmail.com" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">Email</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">
+                <div>
+                    Designed & Developed by VS&CO ASSN.
+                </div>
+                <div>
+                
+                    <span>&copy; 2026 BeatExe. All rights reserved.</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script type="module" src="js/view.js"></script>
+    <script type="module" src="js/search.js"></script>
+</body>
+</html>

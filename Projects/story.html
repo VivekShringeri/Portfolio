@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatExe | Chronicle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Specific editorial styles for the story page */
+        .story-content p { color: var(--text-secondary); line-height: 1.8; font-size: 1.125rem; }
+        .story-content .lead-paragraph { color: var(--text-primary); font-size: 1.35rem; line-height: 1.6; }
+        .story-content { max-width: 680px; margin: 0 auto; }
+    </style>
+</head>
+<body class="bg-base text-primary">
+
+    <nav class="navbar scrolled" id="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="brand font-serif italic">BeatExe.</a>
+            <div class="nav-links desktop-only">
+                <a href="explore.html">Atlas</a>
+                <a href="chronicles.html">Chronicles</a>
+                <a href="ledger.html">Ledger</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-icon"><i data-lucide="search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section-padding mt-8">
+        <div class="container">
+            
+            <header class="mb-12 text-center max-w-content mx-auto">
+                <span class="text-sm text-secondary uppercase-spaced block mb-4">Deep Dive</span>
+                <h1 id="story-title" class="display-title font-serif mb-6 skeleton-text w-100">Loading Chronicle...</h1>
+                <p id="story-subtitle" class="text-lg text-secondary mb-6"></p>
+                <div class="flex-center gap-4 text-sm font-mono text-secondary justify-center flex-gap">
+                    <span id="story-author"></span>
+                    <span>·</span>
+                    <span id="story-time"></span>
+                </div>
+            </header>
+
+            <article id="story-body" class="story-content mb-12">
+                <!-- Paragraphs will be injected here -->
+                <div class="skeleton-text w-100 mb-2"></div>
+                <div class="skeleton-text w-100 mb-2"></div>
+                <div class="skeleton-text w-75 mb-6"></div>
+            </article>
+            
+        </div>
+    </main>
+
+
+    <!-- Ultra-Minimal Premium Footer -->
+    <footer class="bg-base" style="margin-top: 8rem; padding-top: 4rem; padding-bottom: 2rem; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container max-w-content mx-auto">
+            
+            <!-- Top Section: Brand & Connect -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 3rem; margin-bottom: 4rem;">
+                
+                <!-- Brand Logo -->
+                <div>
+                    <a href="index.html" class="brand font-serif italic text-primary" style="font-size: 3.5rem; text-decoration: none; display: block; line-height: 1;">
+                        BeatExe.
+                    </a>
+                </div>
+
+                <!-- Connect Links (Horizontal) -->
+                <div>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 2.5rem;">
+                        <li><a href="https://github.com/VivekShringeri/Portfolio" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/vivek-shringeri-b263553a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/controsparalos?igsh=cjJzdnk5cGlibHFo" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">Instagram</a></li>
+                        <li><a href="https://pin.it/3P8KYF6SW" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">Pinterest</a></li>
+                        <li><a href="vivekshringeri001@gmail.com" style="color: var(--text-secondary); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; transition: color 0.3s;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">Email</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary);">
+                <div>
+                    Designed & Developed by VS&CO ASSN.
+                </div>
+                <div>
+                
+                    <span>&copy; 2026 BeatExe. All rights reserved.</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script type="module" src="js/story.js"></script>
+</body>
+</html>
